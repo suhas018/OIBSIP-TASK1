@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan: hsl(195, 76%, 92%);
+  --dark-cyan: hsl(191, 97%, 15%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 17px 64px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn.primary {
+  background:rgba(116, 53, 231, 0.24) ;
+}
+
+.btn.secondary {
+  color: white;
+  background: rgba(116, 53, 231, 0.24);
+}
+
+.eren{
+  margin-left: 20%;
+  display:flex;
+  justify-content:space-between;
+}
+.btn.home {
+  color: white;
+  background: rgba(116, 53, 231, 0.24);
+}
+.btn.discuss {
+  color: white;
+  background: rgba(116, 53, 231, 0.24);
+  margin-left: 5%;
+}
+
+.btn.popular {
+  color: white;
+  background: rgba(116, 53, 231, 0.24);
+  margin-left: 4%;
+}
+.btn.announcement { 
+  color: white;
+  background: rgba(116, 53, 231, 0.24);
+  margin-left: 5%;
+}
+.hero-section {
+  height: 100vh;
+  background: var(--pale-cyan) url("images/bg-hero-desktop.svg") no-repeat;
+  padding: 36px 59px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.logo img {
+  height: 26px;
+  width: auto;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero-content .text-info {
+  flex: 1;
+  padding-right: 70px;
+}
+
+.hero-content .text-info p {
+  margin: 25px 0;
+}
+
+.hero-content .illustration {
+  flex: 1;
+}
+.hero-content .illustration img {
+  width: 100%;
+}
+
+
+
+.features-section {
+  padding: 100px 59px 200px 59px;
+  position: relative;
+}
+
+.feature {
+  display: flex;
+  height: 400px;
+  margin-bottom: 45px;
+  padding: 55px 55px 55px 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+}
+
+.feature .text-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature .text-info h2 {
+  margin-bottom: 20px;
+}
+
+.feature .text-info p {
+  color: var(--grayish-blue);
+}
+
+.feature .illustration {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.feature .illustration img {
+  height: 90%;
+}
+
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature:nth-child(even) .illustration {
+  justify-content: flex-start;
+}
+
+.cta {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 50px 0;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  background: white;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+
+
+footer {
+  background: var(--dark-cyan);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 70px 70px 70px;
+  font-size: 14px;
+  position: relative;
+}
+
+footer .logo {
+  color: white;
+}
+
+footer .contact {
+  max-width: 350px;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+footer .contact p {
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+footer .contact p img {
+  height: 14px;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.footer-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .socials {
+  font-size: 20px;
+  align-self: flex-start;
+}
+
+
+
+
+
